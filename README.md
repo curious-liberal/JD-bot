@@ -16,5 +16,39 @@ In future plans include:
  + A GUI interface
  + Purchasing of shoe
  + Cancelling of purchases
- + Recieving verification codes
+ + Receiving verification codes
  + Secure, remote access via Discord bot
+
+# Basic usage
+
+To start, ensure the "request_bot" python file is the your working directory
+
+Next import the module to unlock THE POWER!!!
+
+```
+import request_bot
+```
+
+If you wish to login to your JD account insert the following code 
+
+```
+login_details = request_bot.get_creds()
+```
+
+It is also advisable to store the URL for the shoe you wish to use in a variable
+
+```
+shoe = "https://www.url.to.jd.shoe.com/blah-blah-blah"
+```
+
+To create the bot instantiate the "Beanjuice" object
+
+```
+bot = Beanjuice()
+```
+
+It strongly recommended to add the following instance attributes according to your needs:
+
++ Credentials - feel free to use: ```credentials=login_details``` OR ```credentials=["username", "password"]```
++ Shoe URL: - ```shoe_url```
++ Console output: ```True``` or ```False```
